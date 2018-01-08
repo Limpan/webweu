@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Welcome{% endblock %} — Webbutveckling</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="{{ '/static/normalize.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/skeleton.css'|url }}">
+  <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+  <link rel="stylesheet" href="{{ '/static/custom.css'|url }}">
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>
