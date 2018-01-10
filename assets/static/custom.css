@@ -27,6 +27,11 @@ section {
   overflow-y: hidden;
 }
 
+ol, ul {
+  list-style-position: outside;
+}
+
+
 /* Larger than phone */
 @media (min-width: 550px) {
 

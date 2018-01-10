@@ -24,12 +24,68 @@ tag, en starttag och saknar helt sluttag.
 ### Attribut
 Ett element kan ha olika attribut som ändrar hur elementet beter sig. Vissa
 element har attribut som krävs men många attribut är helt frivilliga.
+Vanligtvis skrivs attribut som namn-värde-par med ett `=` mellan. Dessa
+namn-värde-par skrivs in i starttaggen efter namnet.
 
+```html
+<tag attribut="värde">innehåll som påverkas av taggen</tag>
+```
+
+Här är det HTML-elementet med namnet `tag` som får attributet `attribut` satt
+till värdet `värde`. Värdet skrivs mellan citattecken `"`. HTML-standarden
+tillåter att man istället använder apostrofer `'` eller för vissa typer av värden
+tillåter att de helt utelämnas. Rekommendationen är att alltid använda citattecken (`"`).
+
+De flesta taggarna kan ha följande vanliga attribut:
+* `id`-attributet används för att ge ett element ett för dokumentet unikt id.
+Dessa ska vara unika i hela dokumentet.
+* `class`-attributet används för att gruppera element. Oftast används
+`class`-attributet för att påverka presentationen av sidan. Detta görs genom
+att attributet används som CSS-selektor.
+De kan användas semantiskt där element ges en betydelse eller funktion genom
+`class`-attributet. Detta görs till exempel i microformats, se [Microformats][Wiki-Microformats].
+* `style`-attributet kan användas för att ändra presentationen med CSS.
+Detta bör användas mycket sparsamt, om alls.
+* `title`-attributet kan användas för en underliggande förklaring eller liknande.
+Oftast visas denna text av webbläsaren som en liten bubbla intill elementet.
+* `lang`-attributet kan användas för att ange ett annat naturligt språk än det
+som gäller för hela dokumentet. Vilka värden som kan användas kan du kolla upp
+med [Language subtag lookup][Language-subtag-lookup].
+
+Elementet `abbr` får här demonstrera hur det kan se ut.
+
+```html
+<abbr id="ettId" class="enKlass" style="color: red;" title="Hypertext Markup Language">HTML</abbr>
+```
 
 #### Boolska attribut
+Det finns så kallade boolska attribut. Boolsk betyder att de bara har två värden,
+vanligtvis *sant* eller *falskt*. I det här sammanhanget handlar det om att de
+finns eller saknas, deras värde tas ingen hänsyn till och behöver därför inte anges.
+
+För elementet button finns attributet disabled:
+
+```html
+<button type="submit" disabled>Knapp som inte kan klickas på.</button>
+```
 
 ### Struktur
+Ett HTML-dokument måste innehålla vissa delar.
 
+```html
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Exempeltitel</title>
+  </head>
+  <body>
+    <p>Hello world!</p>
+  </body>
+</html>
+```
+
+#### Kommentarer
 
 #### Semantisk HTML
 
@@ -41,3 +97,6 @@ element har attribut som krävs men många attribut är helt frivilliga.
 
 
 https://developer.mozilla.org/en-US/docs/Web/HTML
+
+[Wiki-Microformats]: https://en.wikipedia.org/wiki/Microformat
+[Language-subtag-lookup]: https://r12a.github.io/app-subtags/
