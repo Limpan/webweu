@@ -5,7 +5,7 @@ body:
 Hypertext Markup Language (HTML) är det märkspråk som används för att skapa
 webbsidor. Filer som innehåller HTML använder oftast filändelsen `.html`.
 
-### Element
+## Element
 HTML-sidor byggs upp av element som lite slarvigt brukar kallas för taggar.
 HTML-elementen gör det möjligt att skapa strukturerade dokument genom att
 markera semantiskt viktiga delar av dokumentet, till exempel rubriker, stycken,
@@ -21,7 +21,7 @@ innehåll. Ett exempel är radbrytning `<br>` där det inte är tillåtet med n�
 innehåll, varken andra taggar eller text. De tomma elementen beskrivs med en
 tag, en starttag och saknar helt sluttag.
 
-### Attribut
+## Attribut
 Ett element kan ha olika attribut som ändrar hur elementet beter sig. Vissa
 element har attribut som krävs men många attribut är helt frivilliga.
 Vanligtvis skrivs attribut som namn-värde-par med ett `=` mellan. Dessa
@@ -58,7 +58,7 @@ Elementet `abbr` får här demonstrera hur det kan se ut.
 <abbr id="ettId" class="enKlass" style="color: red;" title="Hypertext Markup Language">HTML</abbr>
 ```
 
-#### Boolska attribut
+### Boolska attribut
 Det finns så kallade boolska attribut. Boolsk betyder att de bara har två värden,
 vanligtvis *sant* eller *falskt*. I det här sammanhanget handlar det om att de
 finns eller saknas, deras värde tas ingen hänsyn till och behöver därför inte anges.
@@ -69,7 +69,7 @@ För elementet button finns attributet disabled:
 <button type="submit" disabled>Knapp som inte kan klickas på.</button>
 ```
 
-### Struktur
+## Struktur
 Ett HTML-dokument måste innehålla vissa delar.
 
 ```html
@@ -85,18 +85,41 @@ Ett HTML-dokument måste innehålla vissa delar.
 </html>
 ```
 
-#### Kommentarer
 
-#### Semantisk HTML
+### Kommentarer
+I HTML kan man göra kommentarer. En kommentar ignoreras helt när HTML-koden
+ska tolkas. En kommentar börjar med `<!--` och avslutas med `-->`.
+Kommentaren kan börja och sluta på samma eller olika rader.
 
-#### Implicit stängning av taggar
+
+### Semantisk HTML
+Med semantisk HTML avses att använda HTML-elementen till det de är avsedda för.
+Det kan handla om att använda `section`, `article` och `nav` istället för den
+generiska `div`. Dessutom brukar semantisk HTML kräva att man lägger lite extra
+energi på val av klassnamn och id så att dessa ges värden med betydelse i det
+sammanhang de återfinns.
 
 
+### Implicit stängning av taggar
+I HTML är det i vissa situationer okej att utelämna sluttaggen då det går att
+räkna ut var den ska stå. Det kan handla om `p`-taggen eller `li`-taggen där
+det inte är tillåtet med flera nästlade direkt i varandra och man därför kan
+räkna ut att den öppna taggen måste avslutas innan en ny kan öppnas.
 
-### Olika versioner - DTD
+Det är mycket bättre att vara explicit och skriva ut alla taggar.
+
+
+## DOM
+I en fil skriver vi innehåll och märker upp detta med HTML-taggar. När detta
+sedan läses in och tolkas av webbläsaren bygger den upp något som kallas för
+en DOM. DOM står för Document Object Model och här blir våra HTML-taggar till
+element. Det webbläsaren visar för användaren är alltså inte HTML-filen utan
+en tolkning av denna.
 
 
 https://developer.mozilla.org/en-US/docs/Web/HTML
+
+http://www.brucelawson.co.uk/2010/a-minimal-html5-document/
 
 [Wiki-Microformats]: https://en.wikipedia.org/wiki/Microformat
 [Language-subtag-lookup]: https://r12a.github.io/app-subtags/

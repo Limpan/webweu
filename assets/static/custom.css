@@ -31,6 +31,10 @@ ol, ul {
   list-style-position: outside;
 }
 
+ul {
+  list-style-type: square;
+}
+
 
 /* Larger than phone */
 @media (min-width: 550px) {
