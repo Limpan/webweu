@@ -1,0 +1,191 @@
+title: Terminalen
+---
+body:
+
+## Om bash, zsh, dash, fish
+!!, CTRL + r, >, >>, pipe
+
+
+## Navigering och filhantering
+
+### pwd
+
+### cd
+
+### ls
+
+### mv
+
+### cp
+
+### rm
+
+### mkdir
+
+### rmdir
+
+### cat
+
+### touch
+
+### chmod
+
+### chown
+
+### echo
+
+
+## Verktyg
+
+### clear
+
+### history
+
+### grep
+
+### find
+
+### whatis
+
+### whois
+
+### locate
+
+### man
+
+### tail
+
+### less
+
+
+## System
+
+### su
+
+### sudo
+
+### shutdown
+
+### service
+
+### crontab
+
+### ps
+
+### top
+
+### free
+
+### df
+
+### kill
+
+### mount
+
+### passwd
+
+### date
+
+
+## Installation av program
+
+### apt
+
+### apt-get
+
+### yum
+
+### rpm
+
+### dpkg
+
+
+## Filarkiv
+
+### tar
+
+### gzip
+
+### bzip2
+
+### unzip
+
+###
+
+
+## Nätverk
+
+### ifconfig
+
+### ifup
+
+### ifdown
+
+### lshw
+lshw -c network
+
+### ping
+
+### dig
+
+### ssh
+
+### ftp
+
+### wget
+
+### curl
+
+### ufw
+
+
+## Texteditorer
+
+### vim
+
+### nano
+
+
+## Kanske ska med?
+
+### sed
+
+### awk
+
+### diff
+
+### sort
+
+### export
+
+### xargs
+
+### chgrp
+
+### uname
+
+### dd
+
+### rsync
+
+### dmesg
+
+### netstat
+
+### lsblk
+
+### w
+
+### who
+
+### whoami
+
+### users
+
+### last
+
+### lsof
+
+### ln
+
+### alias
