@@ -32,7 +32,18 @@ ol, ul {
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: disc;
+}
+
+/* Examples on page */
+
+.example {
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
+.example * {
+  margin: 0;
 }
 
 
