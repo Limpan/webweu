@@ -1,5 +1,9 @@
 title: Layout
 ---
+summary: x
+---
+sort_key: 70
+---
 body:
 
 Layout handlar en sidas struktur. Denna beror förstås på vilket och hur
@@ -48,7 +52,7 @@ section {
 div {
   margin: 2px;
   width: 100px;
-  height: 70px;  
+  height: 70px;
 }
 
 .left {
