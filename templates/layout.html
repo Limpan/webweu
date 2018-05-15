@@ -17,10 +17,24 @@
   <link rel="stylesheet" href="{{ '/static/custom.css'|url }}">
 </head>
 <body>
-  <div class="container">
-{% block body %}{% endblock %}
-  <footer>Copyright &copy; Linus Törngren 2018</footer>
-</div>
-
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  <main>
+    {% block body %}{% endblock %}
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="two columns"><p>&nbsp;</p></div>
+        <div class="eight columns">
+          <p>Copyright &copy; Linus Törngren 2018</p>
+        </div>
+        <div class="two columns">
+          <p id="social-media">GH</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

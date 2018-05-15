@@ -1,16 +1,21 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-  <header>
+
+{% block header %}
+  <div class="container">
     <h1>{{ this.title }}</h1>
-  </header>
+  </div>
+{% endblock %}
 
-  {% if this.children %}
-    {% for page in this.children %}
-      <h2><a href="{{ page|url }}">{{ page.title }}</a></h2>
-      <p>{{ page.summary }}</p>
-    {% endfor %}
-  {% endif %}
+{% block body %}
+  <div class="container">
+    {% if this.children %}
+      {% for page in this.children %}
+        <h2><a href="{{ page|url }}">{{ page.title }}</a></h2>
+        <p>{{ page.summary }}</p>
+      {% endfor %}
+    {% endif %}
 
-  {{ this.body }}
+    {{ this.body }}
+  </div> <!-- .container -->
 {% endblock %}

@@ -1,22 +1,27 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-  <header>
+
+{% block header %}
+  <div class="container">
     <h1>{{ this.title }}</h1>
-  </header>
+  </div>
+{% endblock %}
 
-  {{ this.body }}
+{% block body %}
+  <div class="container">
+    {{ this.body }}
 
-  {% if this.children %}
-    {% for cols in this.children|sort(attribute='sort_key')|batch(2) %}
-      <div class="row">
-      {% for page in cols %}
-        <div class="six columns">
-          <h3><a href="{{ page|url }}">{{ page.title }}</a></h3>
-          {{ page.summary }}
+    {% if this.children %}
+      {% for cols in this.children|sort(attribute='sort_key')|batch(2) %}
+        <div class="row">
+        {% for page in cols %}
+          <div class="six columns">
+            <h3><a href="{{ page|url }}">{{ page.title }}</a></h3>
+            {{ page.summary }}
+          </div>
+        {% endfor %}
         </div>
       {% endfor %}
-      </div>
-    {% endfor %}
-  {% endif %}
+    {% endif %}
+  </div> <!-- .container -->
 {% endblock %}
