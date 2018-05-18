@@ -26,12 +26,35 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="two columns"><p>&nbsp;</p></div>
-        <div class="eight columns">
-          <p>Copyright &copy; Linus Törngren 2018</p>
+        <div class="four columns">
+          <p><a href="{{ site.root|url }}" class="main-page-link">HEM</a></p>
         </div>
-        <div class="two columns">
-          <p id="social-media">GH</a></p>
+        <div class="four columns">
+          {% set page = site.get('/Webbutveckling') %}
+          <ul>
+            <li><a href="{{ page|url }}" class="main-page-link">{{ page.title }}</a>
+            {% for child in page.children %}
+              <li><a href="{{ child|url }}">{{ child.title }}</a>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="four columns">
+          {% set page = site.get('/Linux') %}
+          <ul>
+            <li><a href="{{ page|url }}" class="main-page-link">{{ page.title }}</a>
+            {% for child in page.children %}
+              <li><a href="{{ child|url }}">{{ child.title }}</a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="eight columns">
+          <p>Copyright &copy; 2018, Linus Törngren</p>
+        </div>
+        <div class="four columns">
+          <p id="social-media">Kod GitHub</p>
         </div>
       </div>
     </div>

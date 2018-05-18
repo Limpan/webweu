@@ -2,8 +2,8 @@ _model: page
 ---
 title: Linux
 ---
-summary: x
+summary: Linux är ett operativsystem som är mycket populärt för servrar som levererar tjänster, både på internet och i lokala nätverk.
 ---
 sort_key: 200
 ---
-body:
+body: Linux skapades av Linus Torvalds 1991 och var från början inte tänkt att bli en ersättare till Hurd i GNU-projektet.

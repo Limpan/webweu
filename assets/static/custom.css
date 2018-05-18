@@ -9,6 +9,16 @@ rgb(1, 12, 20);
 
 */
 
+/* ---- Typography -------------------------------------------------------- */
+
+h2 {
+  margin-top: 8rem;
+}
+
+h3 {
+  margin-top: 4rem;
+}
+
 /* ---- Design ------------------------------------------------------------ */
 
 .container {
@@ -45,7 +55,6 @@ footer {
 }
 
 footer p {
-  text-align: center;
   color: rgb(221, 237, 248);
 }
 
@@ -53,6 +62,19 @@ footer #social-media {
   text-align: right;
 }
 
+footer ul {
+  list-style-type: none;
+}
+
+footer .main-page-link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer hr {
+  margin-top: 1rem;
+  border-color: rgb(125, 158, 181);
+}
 
 /* ---- Move footer to the bottom ----------------------------------------- */
 
@@ -70,6 +92,10 @@ main {
   flex: 1;
 }
 
+footer {
+  margin-top: 10rem;
+}
+
 
 /* ---- Links ------------------------------------------------------------- */
 
@@ -78,7 +104,8 @@ a, a:hover {
 }
 
 footer a, footer a:hover {
-  color: rgb(125, 158, 181);
+  color: rgb(221, 237, 248);
+  text-decoration: none;
 }
 
 #social-media a, #social-media a:hover {
@@ -88,13 +115,18 @@ footer a, footer a:hover {
 
 /* ---- Syntax highlighting ----------------------------------------------- */
 
+.highlight {
+  margin-bottom: 2.5rem;
+}
+
 .highlight pre {
   font-family: 'Inconsolata', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   border-radius: 2px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   overflow-y: hidden;
+  margin: -0.5rem -1rem;
 }
 
 ol, ul {

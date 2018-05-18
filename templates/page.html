@@ -9,6 +9,8 @@
 
 {% block body %}
   <div class="container">
+    {{ this.body }}
+
     {% if this.children %}
       {% for page in this.children %}
         <h2><a href="{{ page|url }}">{{ page.title }}</a></h2>
@@ -16,6 +18,5 @@
       {% endfor %}
     {% endif %}
 
-    {{ this.body }}
   </div> <!-- .container -->
 {% endblock %}

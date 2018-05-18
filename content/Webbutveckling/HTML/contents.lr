@@ -118,7 +118,7 @@ I en fil skriver vi innehåll och märker upp detta med HTML-taggar. När detta
 sedan läses in och tolkas av webbläsaren bygger den upp något som kallas för
 en DOM. DOM står för Document Object Model och här blir våra HTML-taggar till
 element. Det webbläsaren visar för användaren är alltså inte HTML-filen utan
-en tolkning av denna.
+en tolkning av denna, DOM.
 
 
 https://developer.mozilla.org/en-US/docs/Web/HTML

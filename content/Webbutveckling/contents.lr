@@ -2,7 +2,10 @@ _model: page
 ---
 title: Webbutveckling
 ---
-summary: x
+summary:
+
+Webbutveckling handlar om hur hemsidor byggs. Samma teknik återfinns
+även på andra ställen som inte alltid ser ut som webben.
 ---
 sort_key: 100
 ---
