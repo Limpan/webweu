@@ -26,13 +26,25 @@ h3 {
 }
 
 header {
-  background-color: rgb(221, 237, 248);
+/*  background-color: rgb(221, 237, 248); */
+  background-image: url(../background.svg);
+  background-position: top center;
+  background-attachment: fixed;
+  height: 32rem;
 }
 
 header > .container {
-  margin-top: 18rem;
-  margin-bottom: 6rem;
+/*  margin-top: 18rem;
+  margin-bottom: 6rem; */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin: 0;
 }
 
 main {
@@ -123,16 +135,40 @@ footer a, footer a:hover {
 
 .lang > span {
   text-transform: uppercase;
-  margin: 0.5rem 1rem 0.2rem;
+  padding: 0.4rem 1rem 0rem;
   display: inline-block;
+  width: calc(100% - 2rem);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: rgb(80, 80, 80);
 }
 
-.lang-css {
-  
+/*
+rgb(250, 75, 32)
+rgb(129, 204, 41)
+rgb(240, 216, 23)
+rgb(31, 109, 227)
+rgb(155, 35, 194)
+*/
+
+.lang-css > span {
+  border-bottom-color: rgb(250, 75, 32);
 }
 
 .lang-html > span {
-  border-top-color: #e34c26;
+  border-bottom-color: rgb(129, 204, 41);
+}
+
+.lang-python > span {
+  border-bottom-color: rgb(31, 109, 227);
+}
+
+.lang-javascript > span {
+  border-bottom-color: rgb(155, 35, 194);
+}
+
+.lang-bash > span {
+  border-bottom-color: rgb(240, 216, 23);
 }
 
 .highlight {
