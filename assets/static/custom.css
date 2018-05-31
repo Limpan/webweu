@@ -1,22 +1,20 @@
 
 /*
-
 rgb(221, 237, 248);
 rgb(125, 158, 181);
 rgb(61, 100, 127);
 rgb(19, 53, 77);
 rgb(1, 12, 20);
-
 */
 
 /* ---- Typography -------------------------------------------------------- */
 
 h2 {
-  margin-top: 8rem;
+  margin-top: 20rem;
 }
 
 h3 {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 /* ---- Design ------------------------------------------------------------ */
@@ -26,16 +24,14 @@ h3 {
 }
 
 header {
-/*  background-color: rgb(221, 237, 248); */
-  background-image: url(../background.svg);
-  background-position: top center;
-  background-attachment: fixed;
   height: 32rem;
+  background-image: url(../background.svg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
 }
 
 header > .container {
-/*  margin-top: 18rem;
-  margin-bottom: 6rem; */
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -43,7 +39,7 @@ header > .container {
 }
 
 header h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   margin: 0;
 }
 
