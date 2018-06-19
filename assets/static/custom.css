@@ -17,6 +17,13 @@ h3 {
   margin-top: 8rem;
 }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3.6rem;
+  margin-bottom: 1rem;
+}
+
 /* ---- Design ------------------------------------------------------------ */
 
 .container {
@@ -83,6 +90,7 @@ footer hr {
   margin-top: 1rem;
   border-color: rgb(125, 158, 181);
 }
+
 
 /* ---- Move footer to the bottom ----------------------------------------- */
 
